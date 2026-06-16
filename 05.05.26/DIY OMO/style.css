@@ -1,0 +1,78 @@
+/* CSS Variables */
+:root {
+  --primary-bg: #1e90ff;
+  --secondary-bg: #ff6f61;
+  --font-color: #fff;
+  --font-size: 20px;
+  --box-size: 200px;
+}
+
+/* General box styling */
+.box {
+  width: var(--box-size);
+  height: var(--box-size);
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size);
+  color: var(--font-color);
+  background-color: var(--secondary-bg);
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Transform demo */
+.transform-box {
+  background-color: #a2a1ff;
+  transition: transform 0.5s ease;
+}
+.transform-box:hover {
+  transform: rotate(30deg) scale(1.2) translateX(30px);
+}
+
+/* Transition demo */
+.transition-box {
+  background-color: #ffb648;
+  transition: background-color 2s, width 2s, height 2s;
+}
+.transition-box:hover {
+  background-color: #21ffcf;
+  width: 250px;
+  height: 250px;
+}
+
+/* Animation demo */
+.animation-box {
+  background-color: #ff0000;
+  position: relative;
+  animation: dance 4s infinite alternate ease-in-out;
+}
+@keyframes dance {
+  0%   { transform: translateX(0) rotate(0deg); background-color: #ff0000; }
+  50%  { transform: translateX(100px) rotate(45deg); background-color: #ffb648; }
+  100% { transform: translateX(0) rotate(-45deg); background-color: #21ffcf; }
+}
+
+/* CSS Variables demo */
+.variable-box {
+  background-color: var(--primary-bg);
+  font-size: var(--font-size);
+  color: var(--font-color);
+}
+
+
+/* What You Get
+Transform box → spins, grows, and slides when hovered.
+
+Transition box → smoothly changes size and color when hovered.
+
+Animation box → dances back and forth forever.
+
+Variable box → styled using CSS variables (easy to theme).
+
+This setup is like a mini playground where you can experiment. 
+Change values in style.
+css (like rotate(30deg) or animation-duration: 2s)
+And watch the magic happen. */

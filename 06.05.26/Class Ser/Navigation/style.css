@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    background-color: #fff6e7;
+    justify-content: space-evenly;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(75, 117, 255);
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #bbb6ff;
+    color: aquamarine;
+    border: 2px white solid;
+    border-radius: 22px;
+}
+
+footer {
+    width: 100%vh;
+    height: 50px;
+    background-color: #bd9cbb;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
